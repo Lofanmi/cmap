@@ -24,11 +24,11 @@ jobs:
     - name: Install dependencies
       run: go mod download
 
-    - name: Run tests
-      run: go test -v -race -coverprofile=coverage.txt -covermode=atomic
-
     - name: Run benchmarks
       run: go test -bench=. -benchmem
+
+    - name: Run tests
+      run: go test -v -race -coverprofile=coverage.txt -covermode=atomic
 
     - name: Upload coverage to Codecov
       uses: codecov/codecov-action@v3
