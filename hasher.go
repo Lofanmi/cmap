@@ -76,9 +76,7 @@ func (h stringHasher) Hash(key string) uint32 {
 
 // ---------------------------------------------------------------------------------------------------------------------
 
-type genericHasher[T cmp.Ordered] struct {
-	value T
-}
+type genericHasher[T cmp.Ordered] struct{}
 
 func (h genericHasher[T]) Hash(key T) uint32 {
 	str := cast.ToString(key)

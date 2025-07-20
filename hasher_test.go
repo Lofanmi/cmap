@@ -201,7 +201,6 @@ func TestFloatSpecialValues(t *testing.T) {
 	f32Hasher := float32Hasher{}
 	testFloat32s := []float32{
 		0.0,
-		-0.0,
 		1.0,
 		-1.0,
 		float32(0.1),
@@ -219,7 +218,6 @@ func TestFloatSpecialValues(t *testing.T) {
 	f64Hasher := float64Hasher{}
 	testFloat64s := []float64{
 		0.0,
-		-0.0,
 		1.0,
 		-1.0,
 		0.1,
